@@ -1,3 +1,5 @@
+![pub](https://img.shields.io/badge/pub-0.0.2-blue) ![license](https://img.shields.io/badge/license-MIT-blueviolet)
+
 # flutter_ multi_bloc_builder
 
 A Flutter package that helps implement the [BLoC pattern](https://www.didierboelens.com/2018/08/reactive-programming---streams---bloc).

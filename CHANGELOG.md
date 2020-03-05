@@ -1,3 +1,9 @@
-## [0.0.1] - TODO: Add release date.
+## 0.0.2
+* Add tests for `MultiBlocBuilder`.
+* Update readme
 
-* TODO: Describe initial release.
+
+## 0.0.1
+Initial version of the library.
+
+* Includes the `MultiBlocBuilder` and `BlocStates`.
