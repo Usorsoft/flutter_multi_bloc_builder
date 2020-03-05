@@ -36,35 +36,3 @@ MultiBlocBuilder(
     }
 );
 ```
-
-
-MultiBlocBuilder handles building the widget in response to new states. BlocBuilder is very similar to StreamBuilder but has a more simple API to reduce the amount of boilerplate code needed. The builder function will potentially be called many times and should be a pure function that returns a widget in response to the state.
-
-See BlocListener if you want to "do" anything in response to state changes such as navigation, showing a dialog, etc...
-
-If the bloc parameter is omitted, BlocBuilder will automatically perform a lookup using BlocProvider and the current BuildContext.
-
-BlocBuilder<BlocA, BlocAState>(
-  builder: (context, state) {
-    // return widget here based on BlocA's state
-  }
-)
-Only specify the bloc if you wish to provide a bloc that will be scoped to a single widget and isn't accessible via a parent BlocProvider and the current BuildContext.
-
-BlocBuilder<BlocA, BlocAState>(
-  bloc: blocA, // provide the local bloc instance
-  builder: (context, state) {
-    // return widget here based on BlocA's state
-  }
-)
-If you want fine-grained control over when the builder function is called you can provide an optional condition to BlocBuilder. The condition takes the previous bloc state and current bloc state and returns a boolean. If condition returns true, builder will be called with state and the widget will rebuild. If condition returns false, builder will not be called with state and no rebuild will occur.
-
-BlocBuilder<BlocA, BlocAState>(
-  condition: (previousState, state) {
-    // return true/false to determine whether or not
-    // to rebuild the widget with state
-  },
-  builder: (context, state) {
-    // return widget here based on BlocA's state
-  }
-)
