@@ -3,7 +3,7 @@
 # flutter_ multi_bloc_builder
 
 A Flutter package that helps implement the [BLoC pattern](https://www.didierboelens.com/2018/08/reactive-programming---streams---bloc).
-It is best used as an extension with the [flutter_bloc](https://pub.dev/packages/flutter_bloc) package which already provides MultiBlocProvider and MultiBlocListener, but no MultiBlocBuilder. 
+It is best used as an extension with the [flutter_bloc](https://pub.dev/packages/flutter_bloc) package which already provides `MultiBlocProvider` and `MultiBlocListener`.
 
 This package is built to work with [bloc](https://pub.dev/packages/bloc).
 
@@ -11,11 +11,11 @@ This package is built to work with [bloc](https://pub.dev/packages/bloc).
 
 __MultiBlocBuilder__ is a Flutter widget which requires minimum one `Bloc` and a `builder` function. 
 `MultiBlocBuilder` handles building the widget in response to new states.
-It should be used in combination with the [flutter_bloc](https://pub.dev/packages/flutter_bloc) package.
+It is best used in combination with the [flutter_bloc](https://pub.dev/packages/flutter_bloc) package.
 
-The `MultiBlocBuilder` requires two parameters. Use `blocs` to specify which bloc states it should observe 
-and build the widget if any of them change.
-Use the [builder] parameter to define a widget tree that is rebuild each time a state change occurs.
+The `MultiBlocBuilder` requires two parameters. 
+* `blocs`: Specify which bloc states the `MultiBlocBuilder` should observe for building the widget
+* `builder`: Anonymous function which returnes your custom widget tree that rebuilds on each state change.
 
 ### How to use:
 ```dart
