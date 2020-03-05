@@ -1,4 +1,4 @@
-![pub](https://img.shields.io/badge/pub-0.0.2-blue) ![license](https://img.shields.io/badge/license-MIT-blueviolet)
+![language](https://img.shields.io/badge/language-Dart-blue) ![pub](https://img.shields.io/badge/pub-0.0.2-blue) ![license](https://img.shields.io/badge/license-MIT-blueviolet)
 
 # flutter_ multi_bloc_builder
 
