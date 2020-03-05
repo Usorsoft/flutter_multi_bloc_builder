@@ -19,21 +19,17 @@ The `MultiBlocBuilder` requires two parameters.
 
 ### How to use:
 ```dart
-final bloc1 = BlocProvider.of<MyBloc1>(context);
-final bloc2 = BlocProvider.of<MyBloc2>(context);
-final bloc3 = BlocProvider.of<MyBloc2>(context);
-
 MultiBlocBuilder(
     blocs: [bloc1, bloc2, bloc3],
     builder: (context, states) {
-        final state1 = states.get<MyBloc1State>();
-        final state2 = states.get<MyBloc2State>();
-        final state3 = states.get<MyBloc3State>();
+        final state1 = states.get<Bloc1State>();
+        final state2 = states.get<Bloc2State>();
+        final state3 = states.get<Bloc3State>();
         
         if (state1 is Loading || state2 is Loading || state3 is Loading) {
             return Text("Loading");
         } else {
-            return Text("SHow some content");
+            return Text("Show some content");
         }
     }
 );
