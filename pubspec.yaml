@@ -1,7 +1,8 @@
 name: flutter_multi_bloc_builder
 description: MultiBlocBuilder is an implementation for building widgets that react to changes of multiple bloc states.
 version: 0.0.1
-homepage:
+repository: https://github.com/Usor-software/flutter_multi_bloc_builder
+homepage: https://github.com/Usor-software/flutter_multi_bloc_builder
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
