@@ -12,8 +12,8 @@ void main() {
     const BOTH_RUNNING = "Both are runing.";
     const DO_DIFFERENT_THINGS = "Person and dog do different things.";
 
-    final dogBloc = DogBloc();
-    final personBloc = PersonBloc();
+    final dogBloc = DogBloc(DogStateSleeping());
+    final personBloc = PersonBloc(PersonStateSleeping());
 
     final multiBlocBuilder = MultiBlocBuilder(
       blocs: [dogBloc, personBloc], 

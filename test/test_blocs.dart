@@ -12,6 +12,9 @@ class PersonEventGoToBed extends PersonEvent {}
 class PersonEventWakeUp extends PersonEvent {}
 
 class PersonBloc extends Bloc<PersonEvent, PersonState> {
+
+  PersonBloc(PersonState initialState) : super(initialState);
+
   @override
   PersonState get initialState => PersonStateSleeping();
 
@@ -43,6 +46,9 @@ class DogEventGoToBed extends DogEvent {}
 class DogEventRun extends DogEvent {}
 
 class DogBloc extends Bloc<DogEvent, DogState> {
+
+  DogBloc(DogState initialState) : super(initialState);
+
   @override
   DogState get initialState => DogStateSleeping();
 
